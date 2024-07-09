@@ -1,0 +1,17 @@
+{
+  "name": "kasulostore-api-contracts",
+  "version": "1.0.0",
+  "description": "Shared repository that holds the api contract types",
+  "main": "dist/index.js",
+  "module": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build tsconfig.json"
+  },
+  "author": "Leandro Rocha Silva",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  }
+}
