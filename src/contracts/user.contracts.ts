@@ -1,4 +1,4 @@
-import { UserEntity } from "@/database-entity/user.entity";
+import { User } from '../dto/User';
 
 export type GetUserRequest = {
   id: string;
@@ -6,7 +6,7 @@ export type GetUserRequest = {
 
 export type GetUserResponse = {
   success: boolean;
-  data: UserEntity;
+  data: User;
 }
 
 export type GetUserListRequest = {
@@ -15,5 +15,5 @@ export type GetUserListRequest = {
 
 export type GetUserListResponse = {
   success: boolean;
-  data: UserEntity[];
+  data: User[];
 }
