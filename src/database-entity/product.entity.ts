@@ -1,8 +1,7 @@
-import { DBDocument } from "./DBDocument";
+import { ProductStatus } from "@/dto/ProductStatus";
+import { Entity } from "./base.entity";
 
-export type ProductStatus = 'draft' | 'in-review' | 'published' | 'reproved'; 
-
-export type Product = DBDocument & {
+export type ProductEntity = Entity & {
   avatar?: string;
   companyId: string;
   coverImage?: string;

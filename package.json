@@ -6,7 +6,9 @@
   "module": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --build tsconfig.json"
+    "build": "tsc --build tsconfig.json",
+    "prebuild": "node pre-build.js",
+    "postbuild": "node post-build.js"
   },
   "author": "Leandro Rocha Silva",
   "license": "ISC",

@@ -1,4 +1,4 @@
-import { Company } from "@/types/Company";
+import { CompanyEntity } from '@/database-entity/company.entity';
 
 export type GetCompanyRequest = {
   id: string;
@@ -6,5 +6,5 @@ export type GetCompanyRequest = {
 
 export type GetCompanyResponse = {
   success: boolean;
-  data: Company
-}
+  data: CompanyEntity;
+};
