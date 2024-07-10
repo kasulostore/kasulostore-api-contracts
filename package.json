@@ -1,5 +1,5 @@
 {
-  "name": "kasulostore-api-contracts",
+  "name": "api-contracts",
   "version": "1.0.0",
   "description": "Shared repository that holds the api contract types",
   "main": "dist/index.js",
@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build tsconfig.json",
     "prebuild": "node pre-build.js",
-    "postbuild": "node post-build.js"
+    "postbuild": "node post-build.js",
+    "install": "npm run build"
   },
   "author": "Leandro Rocha Silva",
   "license": "ISC",
