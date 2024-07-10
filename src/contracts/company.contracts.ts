@@ -1,4 +1,4 @@
-import { Company } from "@/dto/Company";
+import { Company } from '../dto/Company';
 
 export type GetCompanyRequest = {
   id: string;
