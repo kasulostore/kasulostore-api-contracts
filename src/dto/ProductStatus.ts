@@ -1,1 +1,0 @@
-export type ProductStatus = 'draft' | 'in-review' | 'published' | 'reproved'; 
