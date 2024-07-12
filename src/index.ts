@@ -1,2 +1,2 @@
-export * from './contracts/company.contracts';
-export * from './contracts/user.contracts';
+export * from './contracts/store.contracts';
+export * from './types/dto';
