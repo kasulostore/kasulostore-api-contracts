@@ -14,6 +14,7 @@ export type GetStoreCatalogResponse = {
       stock: number;
       name: string;
       price: number;
+      releaseDate: number;
       company: {
         id: string;
         name: string;
