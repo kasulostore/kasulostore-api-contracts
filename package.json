@@ -7,8 +7,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build tsconfig.json",
-    "_prebuild": "node pre-build.js",
-    "_postbuild": "node post-build.js",
     "install": "npm run build"
   },
   "author": "Leandro Rocha Silva",
