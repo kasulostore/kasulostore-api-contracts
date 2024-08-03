@@ -3,19 +3,22 @@ export type GetStoreCatalogRequest = {
   limit?: number;
 };
 
-export type GetStoreCatalogResponse = APIResponse<{
-  items: {
-    id: string;
-    stock: number;
-    name: string;
-    price: number;
-    releaseDate: number;
-    company: {
+export type GetStoreCatalogResponse = {
+  success: true;
+  data: {
+    items: {
       id: string;
+      stock: number;
       name: string;
-    };
-  }[];
-  total: number;
-  offset: number;
-  limit: number;
-}>;
+      price: number;
+      releaseDate: number;
+      company: {
+        id: string;
+        name: string;
+      };
+    }[];
+    total: number;
+    offset: number;
+    limit: number;
+  };
+};

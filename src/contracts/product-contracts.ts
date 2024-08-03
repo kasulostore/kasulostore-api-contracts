@@ -3,26 +3,32 @@ export type GetStoreProductDetailsRequest = {
   userId?: string;
 };
 
-export type GetStoreProductDetailsResponse = APIResponse<{
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-  haveStock: boolean;
-  purchased: boolean;
-  company: {
+export type GetStoreProductDetailsResponse = {
+  success: true;
+  data: {
     id: string;
     name: string;
+    price: number;
+    description: string;
+    haveStock: boolean;
+    purchased: boolean;
+    company: {
+      id: string;
+      name: string;
+    };
   };
-}>;
+};
 
 export type GetStoreProductKeyRequest = {
   productId: string;
 };
 
-export type GetStoreProductKeyResponse = APIResponse<{
-  key: string;
-}>;
+export type GetStoreProductKeyResponse = {
+  success: true;
+  data: {
+    key: string;
+  };
+};
 
 export type CreateProductRequest = {
   companyId: string;
@@ -37,14 +43,20 @@ export type CreateProductRequest = {
   status: 'draft' | 'in-review' | 'published' | 'reproved';
 };
 
-export type CreateProductResponse = APIResponse<{
-  id: string;
-}>;
+export type CreateProductResponse = {
+  success: true;
+  data: {
+    id: string;
+  };
+};
 
 export type UpdateProductRequest = Partial<CreateProductRequest> & {
   id: string;
 };
 
-export type UpdateProductResponse = APIResponse<{
-  id: string;
-}>;
+export type UpdateProductResponse = {
+  success: true;
+  data: {
+    id: string;
+  };
+};
