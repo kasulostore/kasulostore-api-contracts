@@ -4,7 +4,7 @@ export type GetStoreLibraryRequest = {
   limit?: number;
 };
 
-export type GetStoreLibraryResponse = {
+export type GetStoreLibraryResponse = APIResponse<{
   items: {
     id: string;
     name: string;
@@ -12,4 +12,4 @@ export type GetStoreLibraryResponse = {
   total: number;
   offset: number;
   limit: number;
-};
+}>;

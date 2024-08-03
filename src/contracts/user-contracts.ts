@@ -4,12 +4,12 @@ export type SignUpRequest = {
   password: string;
 };
 
-export type SignUpResponse = {
+export type SignUpResponse = APIResponse<{
   id: string;
   email: string;
-};
+}>;
 
-export type GetUserInfoResponse = {
+export type GetUserInfoResponse = APIResponse<{
   id: string;
   name: string;
   email: string;
@@ -19,4 +19,4 @@ export type GetUserInfoResponse = {
     name: string;
     role: string;
   }[];
-};
+}>;

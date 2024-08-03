@@ -3,7 +3,7 @@ export type GetStoreCatalogRequest = {
   limit?: number;
 };
 
-export type GetStoreCatalogResponse = {
+export type GetStoreCatalogResponse = APIResponse<{
   items: {
     id: string;
     stock: number;
@@ -18,4 +18,4 @@ export type GetStoreCatalogResponse = {
   total: number;
   offset: number;
   limit: number;
-};
+}>;

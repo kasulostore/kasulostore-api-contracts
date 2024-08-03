@@ -4,6 +4,6 @@ export type CheckoutRequest = {
   cancel_url: string;
 };
 
-export type CheckoutResponse = {
+export type CheckoutResponse = APIResponse<{
   redirectUrl: string;
-};
+}>;

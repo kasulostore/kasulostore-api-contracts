@@ -3,7 +3,7 @@ export type GetStoreProductDetailsRequest = {
   userId?: string;
 };
 
-export type GetStoreProductDetailsResponse = {
+export type GetStoreProductDetailsResponse = APIResponse<{
   id: string;
   name: string;
   price: number;
@@ -14,15 +14,15 @@ export type GetStoreProductDetailsResponse = {
     id: string;
     name: string;
   };
-};
+}>;
 
 export type GetStoreProductKeyRequest = {
   productId: string;
 };
 
-export type GetStoreProductKeyResponse = {
+export type GetStoreProductKeyResponse = APIResponse<{
   key: string;
-};
+}>;
 
 export type CreateProductRequest = {
   companyId: string;
@@ -37,14 +37,14 @@ export type CreateProductRequest = {
   status: 'draft' | 'in-review' | 'published' | 'reproved';
 };
 
-export type CreateProductResponse = {
+export type CreateProductResponse = APIResponse<{
   id: string;
-};
+}>;
 
 export type UpdateProductRequest = Partial<CreateProductRequest> & {
   id: string;
 };
 
-export type UpdateProductResponse = {
+export type UpdateProductResponse = APIResponse<{
   id: string;
-};
+}>;
